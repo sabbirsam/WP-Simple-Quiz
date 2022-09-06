@@ -22,6 +22,7 @@ if (file_exists(dirname(__FILE__).'/vendor/autoload.php')) {
 
 use Inc\Activate;
 use Inc\Deactivate;
+use Inc\AdminDashboard;
 
 if(!class_exists('WPSimpleQuiz')){
     class WPSimpleQuiz{
@@ -34,12 +35,13 @@ if(!class_exists('WPSimpleQuiz')){
             add_action("plugins_loaded", array( $this, 'wp_simple_quiz_lang' )); 
         }
         function wp_simple_quiz_lang(){
-            load_plugin_textdomain('simple_form', false,dirname(__FILE__)."languages");
+            load_plugin_textdomain('simple_quiz_form', false,dirname(__FILE__)."languages");
         }
         /**
          * Classes 
          */
         public function includes() {
+            new AdminDashboard(); 
             
         }
         function activate(){   
