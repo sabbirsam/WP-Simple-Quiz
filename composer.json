@@ -1,9 +1,8 @@
 {
     "name": "samiu/wp-simple-quiz",
-    "description": "Its for learning React with WordPress",
+    "description": "learning purpose",
     "type": "project",
     "license": "GPL",
-    
     "autoload": {
         "psr-4": {
             "Inc\\" : "./inc"
