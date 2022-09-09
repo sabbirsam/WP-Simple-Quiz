@@ -1,19 +1,31 @@
 {
     "name": "samiu/wp-simple-quiz",
     "description": "learning purpose",
-    "type": "project",
-    "license": "GPL",
-    "autoload": {
-        "psr-4": {
-            "Inc\\" : "./inc"
-        }
-    },
+    "license": "GPL-3.0+",
+	"version": "1.0.0",
+	"keywords": [
+		"wordpress",
+		"plugin"
+	],
+	"require": {
+		"php": ">=5.4.0"
+	},
+	"homepage": "https://github.com/sabbirsam/WP-Simple-Quiz",
+	"require-dev": {
+		"wp-coding-standards/wpcs": "^2.3",
+		"phpcompatibility/phpcompatibility-wp": "^2.1"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	},
     "authors": [
         {
             "name": "sabbirsam",
             "email": "samiubat14@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {}
+    "minimum-stability": "dev"
+   
 }
