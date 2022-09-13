@@ -20,6 +20,11 @@
 			"dealerdirect/phpcodesniffer-composer-installer": true
 		}
 	},
+	"autoload": {
+        "psr-4": {
+            "BPT\\Inc\\": "./inc"
+        }
+    },
     "authors": [
         {
             "name": "sabbirsam",
